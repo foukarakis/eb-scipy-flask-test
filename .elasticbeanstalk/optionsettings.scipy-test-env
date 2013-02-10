@@ -1,0 +1,45 @@
+[aws:elasticbeanstalk:application:environment]
+DJANGO_SETTINGS_MODULE=
+PARAM1=
+PARAM2=
+PARAM4=
+PARAM3=
+PARAM5=
+
+[aws:elasticbeanstalk:container:python]
+WSGIPath=application.py
+NumProcesses=1
+StaticFiles=/static=
+NumThreads=15
+
+[aws:elasticbeanstalk:container:python:staticfiles]
+/static=
+
+[aws:elasticbeanstalk:hostmanager]
+LogPublicationControl=false
+
+[aws:autoscaling:launchconfiguration]
+InstanceType=t1.micro
+EC2KeyName=eb-scipy-test-keypair
+
+[aws:ec2:vpc]
+ELBSubnets=
+ELBScheme=public
+Subnets=
+VPCId=
+
+[aws:elasticbeanstalk:application]
+Application Healthcheck URL=
+
+[aws:autoscaling:asg]
+MaxSize=4
+MinSize=1
+Custom Availability Zones=
+
+[aws:elasticbeanstalk:monitoring]
+Automatically Terminate Unhealthy Instances=true
+
+[aws:elasticbeanstalk:sns:topics]
+Notification Endpoint=
+Notification Protocol=email
+

@@ -1,0 +1,10 @@
+[global]
+ApplicationName=scipy-test
+DevToolsEndpoint=git.elasticbeanstalk.us-west-1.amazonaws.com
+EnvironmentName=scipy-test-env
+OptionSettingFile=/home/....................../optionsettings.scipy-test-env
+RdsEnabled=No
+Region=us-west-1
+ServiceEndpoint=https://elasticbeanstalk.us-west-1.amazonaws.com
+SolutionStack=32bit Amazon Linux running Python
+
